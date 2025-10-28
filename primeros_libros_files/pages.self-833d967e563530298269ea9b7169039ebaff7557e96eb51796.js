@@ -1,0 +1,40 @@
+// Place all the behaviors and hooks related to the matching controller here.
+// All this logic will automatically be available in application.js.
+Spotlight.onLoad(function(){
+  // Set a ujs adapter to support both rails-ujs and jquery-ujs
+  var ujs = typeof Rails === 'undefined' ? $.rails : Rails;
+  SirTrevor.setDefaults({
+    iconUrl: "/assets/spotlight/blocks/sir-trevor-icons-c6b5285b61a032e4fa071f5eaa24be067ec95c12d49f9c259643f18f6ada094a.svg",
+    uploadUrl: $('[data-attachment-endpoint]').data('attachment-endpoint'),
+    ajaxOptions: {
+      headers: {
+        'X-CSRF-Token': ujs.csrfToken() || ''
+      },
+      credentials: 'same-origin'
+    }
+  });
+
+  SirTrevor.Blocks.Heading.prototype.toolbarEnabled = true;
+  SirTrevor.Blocks.Quote.prototype.toolbarEnabled = true;
+  SirTrevor.Blocks.Text.prototype.toolbarEnabled = true;
+
+  var instance = $('.js-st-instance').first();
+
+  if (instance.length) {
+    var editor = new SirTrevor.Editor({
+      el: instance[0],
+      blockTypes: instance.data('blockTypes'),
+      defaultType:["Text"],
+      onEditorRender: function() {
+        $.SerializedForm();
+      },
+      blockTypeLimits: {
+        "SearchResults": 1
+      }
+    });
+
+    editor.blockControls = Spotlight.BlockControls.create(editor);
+
+    new Spotlight.BlockLimits(editor).enforceLimits(editor);
+  }
+});

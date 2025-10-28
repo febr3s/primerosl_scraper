@@ -1,0 +1,429 @@
+/*
+
+
+
+
+
+*/
+/*
+Styling for Project Agreement link on About page
+Link must contain the phrase 'LPLAgreement' to apply this styling
+*/
+/* line 25, /home/glib/app/assets/stylesheets/local_variables.scss */
+a[href*='LPLAgreement'] {
+  background: #51572E;
+  color: white;
+  padding: 10px;
+  border-radius: 10px; }
+
+/* line 33, /home/glib/app/assets/stylesheets/local_variables.scss */
+.row a[href*='/users/sign_in'] {
+  color: #000 !important; }
+
+/* line 38, /home/glib/app/assets/stylesheets/local_variables.scss */
+.empty-page-block p a[href*='/users/sign_in'] {
+  color: #FFF !important; }
+
+/* line 42, /home/glib/app/assets/stylesheets/local_variables.scss */
+div > p > a {
+  color: #8C2804; }
+
+@media (max-width: breakpoint-max(xs)) {
+  /* line 5, /home/glib/app/assets/stylesheets/modules/layout.scss */
+  .topbar > .container {
+    margin-left: 0;
+    margin-right: 0; } }
+
+/* line 13, /home/glib/app/assets/stylesheets/modules/layout.scss */
+.navbar-brand {
+  /* The main logo image for the Blacklight instance */
+  background: url(/assets/blacklight/primeros-fc4612dc10c42d8cdec743f4b07bac2137314e5a65ad45121e0f5037143896a5.png) no-repeat;
+  background-size: contain;
+  border-radius: 8px;
+  flex: 0 0 290px;
+  overflow: hidden;
+  width: 300px;
+  height: 70px;
+  margin-top: .3rem;
+  text-indent: 100%; }
+  @media screen and (max-width: 320px) {
+    /* line 13, /home/glib/app/assets/stylesheets/modules/layout.scss */
+    .navbar-brand {
+      flex: 0 0 215px; } }
+
+/* line 25, /home/glib/app/assets/stylesheets/modules/bootstrap_overrides.scss */
+.page-link {
+  white-space: nowrap;
+  color: #90714C; }
+
+/* line 30, /home/glib/app/assets/stylesheets/modules/bootstrap_overrides.scss */
+.pagination > .pagination > li.active,
+.pagination > .pagination > li.active > span,
+.alpha-filter > .pagination > li.active,
+.alpha-filter > .pagination > li.active > a {
+  border: #90714C;
+  background-color: #90714C;
+  color: white; }
+
+/* line 39, /home/glib/app/assets/stylesheets/modules/bootstrap_overrides.scss */
+.pagination > .pagination > li > a:hover {
+  border: #90714C;
+  background-color: #dfd8ba;
+  color: #90714C; }
+
+/* line 1, /home/glib/app/assets/stylesheets/modules/blacklight_overrides.scss */
+.navbar-search {
+  z-index: 1; }
+  /* line 4, /home/glib/app/assets/stylesheets/modules/blacklight_overrides.scss */
+  .navbar-search .search-field {
+    min-width: 7em; }
+  /* line 9, /home/glib/app/assets/stylesheets/modules/blacklight_overrides.scss */
+  .navbar-search .search-query-form {
+    padding-left: 0; }
+    @media screen and (max-width: breakpoint-max(xs)) {
+      /* line 9, /home/glib/app/assets/stylesheets/modules/blacklight_overrides.scss */
+      .navbar-search .search-query-form {
+        padding-right: 0; } }
+
+/* line 39, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+.facets-heading {
+  line-height: inherit; }
+
+/* line 52, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+.facet-limit .facet-values li .selected {
+  color: #060359 !important; }
+
+/* line 60, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+.facet-limit-active .card-header, .facet-limit-active .collapse-toggle {
+  color: black !important; }
+  /* line 64, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+  .facet-limit-active .card-header a:hover, .facet-limit-active .collapse-toggle a:hover {
+    color: white; }
+/* line 68, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+.facet-limit-active.facet-limit-active {
+  border-color: #dfd8ba !important; }
+  /* line 71, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+  .facet-limit-active.facet-limit-active > .card-header {
+    background-color: #dfd8ba !important; }
+
+/* line 78, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+.facet-values {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 0; }
+  /* line 84, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+  .facet-values li {
+    display: table-row; }
+  /* line 93, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+  .facet-values .remove {
+    font-weight: bold; }
+    /* line 98, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+    .facet-values .remove:hover {
+      color: theme-color("danger");
+      text-decoration: none; }
+  /* line 111, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+  .facet-values .facet-label {
+    display: table-cell;
+    padding-right: 1em;
+    text-indent: -15px;
+    padding-left: 15px;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto; }
+  /* line 120, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+  .facet-values .facet-count {
+    display: table-cell;
+    vertical-align: top;
+    text-align: right;
+    width: 5em; }
+
+/* line 133, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+.facet-extended-list .sort-options {
+  text-align: right; }
+/* line 137, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+.facet-extended-list .prev-next-links {
+  float: left; }
+
+/* line 145, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+.facet-field-heading a {
+  color: inherit; }
+
+/* line 150, /home/glib/app/assets/stylesheets/modules/spotlight_overrides.scss */
+.page-sidebar .nav-link.active,
+#sidebar ol.sidenav li.active,
+#sidebar ul.sidenav li.active a {
+  color: black;
+  cursor: default;
+  text-decoration: none; }
+
+/* line 1, /home/glib/app/assets/stylesheets/spotlight/_footer.scss */
+.ut-footer {
+  background-color: #f7f7f7; }
+
+/* line 5, /home/glib/app/assets/stylesheets/spotlight/_footer.scss */
+.footer-brand {
+  background: transparent url(/images/blacklight/ut-libraries-logo_1.png) no-repeat top left;
+  background-size: contain;
+  overflow: hidden;
+  width: 300px;
+  height: 50px;
+  margin-top: .5rem;
+  text-indent: 100%; }
+
+/* line 17, /home/glib/app/assets/stylesheets/spotlight/_footer.scss */
+.chat {
+  background: transparent url(/assets/blacklight/chat-1825f908f3ff628ffef43ea4f91b3adde3574278f002ef3fa63dd7bc3490826f.png) no-repeat top right;
+  background-size: contain;
+  overflow: hidden;
+  width: 150px;
+  height: 45px;
+  text-indent: 100%; }
+
+@media screen and (max-width: 480px) {
+  /* line 29, /home/glib/app/assets/stylesheets/spotlight/_footer.scss */
+  .footer-brand {
+    width: 280px; }
+
+  /* line 32, /home/glib/app/assets/stylesheets/spotlight/_footer.scss */
+  .chat {
+    width: 140px; } }
+@media screen and (max-width: 450px) {
+  /* line 38, /home/glib/app/assets/stylesheets/spotlight/_footer.scss */
+  .footer-brand {
+    width: 250px; }
+
+  /* line 41, /home/glib/app/assets/stylesheets/spotlight/_footer.scss */
+  .chat {
+    margin-top: .5rem;
+    width: 120px; } }
+@media screen and (max-width: 375px) {
+  /* line 48, /home/glib/app/assets/stylesheets/spotlight/_footer.scss */
+  .footer-brand {
+    width: 200px; }
+
+  /* line 51, /home/glib/app/assets/stylesheets/spotlight/_footer.scss */
+  .chat {
+    margin-top: .5rem;
+    width: 100px; } }
+@media screen and (max-width: 320px) {
+  /* line 58, /home/glib/app/assets/stylesheets/spotlight/_footer.scss */
+  .footer-brand {
+    margin-top: 1rem;
+    width: 180px; }
+
+  /* line 62, /home/glib/app/assets/stylesheets/spotlight/_footer.scss */
+  .chat {
+    margin-top: 1rem;
+    width: 90px; } }
+/* line 12, /home/glib/app/assets/stylesheets/application.scss */
+.download_link {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 17, /home/glib/app/assets/stylesheets/application.scss */
+#skip-link {
+  color: white; }
+
+/* line 21, /home/glib/app/assets/stylesheets/application.scss */
+.filter-value {
+  color: black; }
+
+/* line 25, /home/glib/app/assets/stylesheets/application.scss */
+.filter-value:hover {
+  color: white; }
+
+/* line 34, /home/glib/app/assets/stylesheets/application.scss */
+#mainCarousel .carousel-item img {
+  width: auto;
+  height: 568px;
+  max-height: 568px; }
+
+/* line 44, /home/glib/app/assets/stylesheets/application.scss */
+#facet-panel-collapse .btn {
+  background-color: #dfd8ba; }
+
+/* line 48, /home/glib/app/assets/stylesheets/application.scss */
+.masthead {
+  border-bottom: 1px solid #51572E; }
+
+/* line 52, /home/glib/app/assets/stylesheets/application.scss */
+.custom-select, .form-control {
+  border: 1px solid #51572E; }
+
+/* line 56, /home/glib/app/assets/stylesheets/application.scss */
+#save-this-search {
+  background-color: #90714C; }
+
+/* line 60, /home/glib/app/assets/stylesheets/application.scss */
+.card-header {
+  background-color: #dfd8ba; }
+
+/* line 64, /home/glib/app/assets/stylesheets/application.scss */
+.card, .list-group-item {
+  border: 1px solid #dfd8ba; }
+
+/* line 68, /home/glib/app/assets/stylesheets/application.scss */
+a, a:hover, a.page-link:hover,
+.btn-link, .btn-link:hover {
+  color: black; }
+
+/* line 73, /home/glib/app/assets/stylesheets/application.scss */
+dd > a {
+  color: #A61B26; }
+
+/* line 77, /home/glib/app/assets/stylesheets/application.scss */
+dd > a:hover {
+  color: #A61B26;
+  text-decoration: underline; }
+
+/* line 82, /home/glib/app/assets/stylesheets/application.scss */
+.breadcrumb {
+  background-color: #dfd8ba; }
+
+/* line 86, /home/glib/app/assets/stylesheets/application.scss */
+.breadcrumb-item > a,
+.breadcrumb-item.active {
+  color: black; }
+
+/* line 91, /home/glib/app/assets/stylesheets/application.scss */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #A61B26; }
+
+/* line 96, /home/glib/app/assets/stylesheets/application.scss */
+a.nav-link.active {
+  color: black; }
+
+/* add required field asterisk */
+/* line 101, /home/glib/app/assets/stylesheets/application.scss */
+label.required:after {
+  content: "*";
+  color: red; }
+
+/* line 106, /home/glib/app/assets/stylesheets/application.scss */
+div.required {
+  border-top: 1px solid #dee2e6; }
+
+/* line 110, /home/glib/app/assets/stylesheets/application.scss */
+#metadata_only_placeholder {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 118, /home/glib/app/assets/stylesheets/application.scss */
+html, body {
+  background-color: #f8f7f2; }
+
+/* line 124, /home/glib/app/assets/stylesheets/application.scss */
+.primeros-brand {
+  background-color: #51572E; }
+
+/* line 132, /home/glib/app/assets/stylesheets/application.scss */
+.empty-page-block {
+  color: black;
+  background-color: #90714C;
+  border-color: #90714C; }
+
+/* line 138, /home/glib/app/assets/stylesheets/application.scss */
+.empty-page-block a {
+  color: #F2F2F2;
+  text-decoration: underline;
+  text-decoration-color: #F2F2F2; }
+
+/* line 144, /home/glib/app/assets/stylesheets/application.scss */
+.btn-ut, .bg-ut, .facet-limit-active .card-header, .facet-limit-active .collapse-toggle {
+  background-color: #90714C;
+  color: white; }
+
+/* line 149, /home/glib/app/assets/stylesheets/application.scss */
+.btn-primary {
+  background-color: #51572E;
+  border-color: #51572E; }
+
+/* line 154, /home/glib/app/assets/stylesheets/application.scss */
+a.btn-primary, input.btn-primary {
+  background-color: #be2222;
+  border-color: #be2222;
+  color: white; }
+
+/* line 160, /home/glib/app/assets/stylesheets/application.scss */
+.border-ut, .facet-limit-active {
+  border-color: #90714C; }
+
+/* line 164, /home/glib/app/assets/stylesheets/application.scss */
+.text-ut, .facet-limit .card-body, .facet-values li .selected, .facet-select, .text-ut a, .facet-limit .card-body a, .facet-values li .selected a, .facet-select a {
+  background-color: white;
+  color: #060359; }
+
+/* line 169, /home/glib/app/assets/stylesheets/application.scss */
+.text-ut a:hover, .facet-limit .card-body a:hover, .facet-values li .selected a:hover, .facet-select a:hover {
+  text-decoration: underline; }
+
+/* line 173, /home/glib/app/assets/stylesheets/application.scss */
+.btn-outline-ut, .btn-outline-ut:hover, .btn-primary:hover, .btn-primary:focus {
+  border-color: #90714C;
+  color: #616a72; }
+
+/* line 178, /home/glib/app/assets/stylesheets/application.scss */
+.btn-outline-ut:hover, .btn-primary:hover, .btn-primary:hover, .btn-primary:focus {
+  background-color: #90714C;
+  color: white; }
+
+/* line 184, /home/glib/app/assets/stylesheets/application.scss */
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #A61B26; }
+
+/* line 190, /home/glib/app/assets/stylesheets/application.scss */
+.btn-outline-ut.dropdown-toggle:focus, .dropdown-toggle.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(156, 173, 183, 0.5); }
+
+/* line 195, /home/glib/app/assets/stylesheets/application.scss */
+#sort-dropdown.show,
+#per_page-dropdown.show {
+  display: inline !important; }
+
+/* line 200, /home/glib/app/assets/stylesheets/application.scss */
+.dropdown-item {
+  color: #616a72; }
+
+/* line 204, /home/glib/app/assets/stylesheets/application.scss */
+#footer {
+  position: fixed;
+  height: 75px;
+  clear: both;
+  padding: 0;
+  bottom: 0px;
+  width: 100%;
+  z-index: 1000; }
+
+/* line 216, /home/glib/app/assets/stylesheets/application.scss */
+.fade {
+  opacity: 1; }
+
+/* line 220, /home/glib/app/assets/stylesheets/application.scss */
+.gallery .document-metadata dt, .gallery .document-metadata dd {
+  flex: 0 0 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 50%;
+  max-width: 50%; }
+
+/* line 229, /home/glib/app/assets/stylesheets/application.scss */
+.masonry.document {
+  background-color: transparent; }
+
+/* line 234, /home/glib/app/assets/stylesheets/application.scss */
+.masonry .img-thumbnail {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 242, /home/glib/app/assets/stylesheets/application.scss */
+tr.d-flex td {
+  word-wrap: break-word; }
